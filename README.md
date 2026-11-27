@@ -13,10 +13,10 @@ Tokens in the database: `ops-admin` (manager), `ci-deployer` (rw on releases, th
 
 ## Use the prepared data
 
-The release `world-v1` has `reposilite-data.tar.gz` (sha256 `962492e031266e1e87091f0f2f0a4787a1b7962712bac0cb53e6af321f9410bc`). It unpacks to `reposilite-data/`:
+`reposilite-data.tar.gz` in this repo (sha256 `962492e031266e1e87091f0f2f0a4787a1b7962712bac0cb53e6af321f9410bc`). It unpacks to `reposilite-data/`:
 
 ```
-curl -fsSL https://github.com/jojoxiaojing/reposilite-retention-seed/releases/download/world-v1/reposilite-data.tar.gz | tar xz -C /home/lane
+curl -fsSL https://raw.githubusercontent.com/jojoxiaojing/reposilite-retention-seed/main/reposilite-data.tar.gz | tar xz -C /home/lane
 ```
 
 Start Reposilite against it with `--working-directory /home/lane/reposilite-data`.
